@@ -6,8 +6,13 @@
 body{
     background-image: url("images/background.jpeg");
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     font-family: cursive;
     background-color: rgb(8, 137, 180);
@@ -25,6 +30,7 @@ nav {
     float: right;
     font-family: bradley hand, cursive;
     font-size: 20px;
+    display: flex;
 }
 ul{
     list-style-type: none;
@@ -36,7 +42,11 @@ nav ul li{
 a{
     text-decoration: none;
 }
-
+p{
+    display:flex;
+    flex-direction: column;
+    font-size: 2vmin;
+}
 .Information{
 /*display: inline-block;
 flex-direction: column;
@@ -46,21 +56,29 @@ margin: 40px;*/
     height: 300px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
+    font-size: 2vmin;
     background-color: #47acd4;
     color: black;
-    font-size-adjust: auto; /*need help with this part*/
+
+   /*font-size-adjust: auto; /*need help with this part*/
 }
+
 #My-Works{
     text-align: center;
-    
+    /* align-items: baseline; */
+    /*float:center;*/
+}
+.project{
+    /* align-items:baseline; */
+    justify-content: space-between;
 }
 #Contact-Information{
     text-align: center;
 }
-.projects{
+.projectimg{
     max-width: 100px;
-
-
+    justify-content: space-evenly;
+   /* display:inline-block;*/
 }
 .float-left{
     max-width: 80px;
@@ -74,4 +92,25 @@ footer{
     text-align:center;
     color:honeydew;
 }
+/* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
+/* Tablets - header changes color 
+@media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color 
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color 
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }*/
