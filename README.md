@@ -21,5 +21,12 @@ If you have any questions about the application contact me directly at katieshak
 # Contact
 katieshake27@gmail.com
 # Username
+
+# Final Product
+![Final image.](assets/images/portfolioss.png)
+
+
+Live Website:
+https://kgendaszek.github.io/Portfolio/
 Check out my other work on GitHub.
 https://github.com/kgendaszek
